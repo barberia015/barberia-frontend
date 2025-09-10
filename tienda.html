@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda | 015 CUTZ Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo-social">
+                <img src="logoo.png" alt="Logo Barbería" id="logo-toggle">
+                <div class="social-icons hidden">
+                    <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="logo">
+                <span>[015 CUTZ BARBERSHOP]</span>
+            </div>
+
+
+            <div class="user-icons">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#" id="iconoCarrito"><i class="fas fa-shopping-cart"></i> <span
+                        id="contadorCarrito">(0)</span></a>
+            </div>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="academia.html">Academia</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="lugar.html">Lugar</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menú lateral (móviles) -->
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-header">
+            <span>[015 CUTZ BARBERSHOP]</span>
+            <button id="close-menu">&times;</button>
+        </div>
+
+        <!-- Iconos en móvil -->
+        <div class="side-user-icons">
+            <div class="profile-container">
+                <a href="login.html" id="profile-icon-mobile"><i class="fas fa-user"></i></a>
+
+                <!-- Panel desplegable -->
+                <div class="profile-panel hidden" id="profile-panel-mobile">
+                    <p id="welcome-message-mobile"></p>
+                    <ul>
+                        <li><a href="#">Editar Perfil</a></li>
+                        <li><a href="#">Mi Carrito</a></li>
+                        <li><a href="#" id="logout-btn-mobile">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="academia.html">Academia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="lugar.html">Lugar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+
+    <div class="overlay" id="overlay"></div>
+    <!-- Panel del carrito -->
+    <div class="carrito-panel" id="carritoPanel">
+        <h2>Tu carrito</h2>
+        <ul id="listaCarrito"></ul>
+        <p class="total">Total: <span id="total">0.00</span> €</p>
+        <button class="btn-finalizar" id="finalizarCompra">Finalizar compra</button>
+    </div>
+
+    <!-- Sección de Tienda -->
+    <main class="tienda">
+        <h1 class="tienda-titulo">Nuestra Tienda</h1>
+        <p class="tienda-subtitulo">Explora nuestras camisetas exclusivas y productos de cuidado capilar profesional.
+        </p>
+
+        <!-- Camisetas -->
+        <section class="productos-tienda">
+            <h2 class="seccion-tienda">Camisetas Exclusivas</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="camisetas.jpg" alt="Camiseta Negra Logo 015">
+                    <h3>Camiseta Negra 015</h3>
+                    <p>Camiseta fresca y ligera para un estilo urbano. Perfecta para representar la esencia de 015 CUTZ.
+                    </p>
+                    <p><strong>25 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Camiseta Negra 015 CUTZ" data-precio="25">Añadir al
+                        carrito</button>
+                </div>
+                <div class="producto-card">
+                    <img src="camisetas.jpg" alt="Camiseta Blanca Logo 015">
+                    <h3>Camiseta Blanca 015</h3>
+                    <p>Camiseta fresca y ligera para un estilo urbano. Perfecta para representar la esencia de 015 CUTZ.
+                    </p>
+                    <p><strong>25 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Camiseta Blanca 015 CUTZ" data-precio="25">Añadir al
+                        carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos de cuidado del cabello -->
+        <section class="productos-tienda">
+            <h2 class="seccion-tienda">Productos para el Cabello</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="polvos.jpg" alt="Pomada de Fijación Fuerte">
+                    <h3>Polvos de Volumen</h3>
+                    <p>Ideal para peinados definidos y con control total. Aporta brillo moderado y duración prolongada.
+                    </p>
+                    <p><strong>9,99 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Pomada de Fijación Fuerte" data-precio="15">Añadir al
+                        carrito</button>
+                </div>
+                <div class="producto-card">
+                    <img src="producto.jpg" alt="Cera Mate Profesional">
+                    <h3>Spray Voluminizador</h3>
+                    <p>Textura natural sin brillo, con fijación flexible. Perfecta para looks modernos y desenfadados.
+                    </p>
+                    <p><strong>14,99 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Cera Mate Profesional" data-precio="15">Añadir al
+                        carrito</button>
+                </div>
+                <div class="producto-card">
+                    <img src="gominaa.jpg" alt="Shampoo Revitalizante">
+                    <h3>Cera Fijadora</h3>
+                    <p>Limpieza profunda que fortalece el cabello desde la raíz. Fórmula nutritiva enriquecida con
+                        ingredientes naturales.</p>
+                    <p><strong>20 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Shampoo Revitalizante" data-precio="10">Añadir al
+                        carrito</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <script>
+        const botones = document.querySelectorAll(".btn-comprar");
+        const listaCarrito = document.getElementById("listaCarrito");
+        const totalSpan = document.getElementById("total");
+        const finalizarBtn = document.getElementById("finalizarCompra");
+        const carritoPanel = document.getElementById("carritoPanel");
+        const iconoCarrito = document.getElementById("iconoCarrito");
+        const contadorCarrito = document.getElementById("contadorCarrito");
+        const overlay = document.getElementById("overlay");
+
+        let carrito = [];
+
+        botones.forEach(boton => {
+            boton.addEventListener("click", () => {
+                const nombre = boton.getAttribute("data-nombre");
+                const precio = parseFloat(boton.getAttribute("data-precio"));
+
+                const producto = carrito.find(item => item.nombre === nombre);
+                if (producto) {
+                    producto.cantidad++;
+                } else {
+                    carrito.push({ nombre, precio, cantidad: 1 });
+                }
+
+                actualizarCarrito();
+            });
+        });
+
+        function actualizarCarrito() {
+            listaCarrito.innerHTML = "";
+            let total = 0;
+
+            carrito.forEach((item, index) => {
+                total += item.precio * item.cantidad;
+
+                const li = document.createElement("li");
+                li.innerHTML = `
+                    <span>${item.nombre} - ${item.precio} €</span>
+                    <div class="carrito-controles">
+                        <button onclick="cambiarCantidad(${index}, -1)">➖</button>
+                        <span>${item.cantidad}</span>
+                        <button onclick="cambiarCantidad(${index}, 1)">➕</button>
+                    </div>
+                `;
+                listaCarrito.appendChild(li);
+            });
+
+            totalSpan.textContent = total.toFixed(2);
+            contadorCarrito.textContent = `(${carrito.reduce((acc, item) => acc + item.cantidad, 0)})`;
+        }
+
+        function cambiarCantidad(index, cambio) {
+            carrito[index].cantidad += cambio;
+            if (carrito[index].cantidad <= 0) {
+                carrito.splice(index, 1);
+            }
+            actualizarCarrito();
+        }
+
+        iconoCarrito.addEventListener("click", (e) => {
+            e.preventDefault();
+            carritoPanel.classList.add("active");
+            overlay.classList.add("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            carritoPanel.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+
+        finalizarBtn.addEventListener("click", () => {
+            if (carrito.length === 0) {
+                alert("Tu carrito está vacío.");
+                return;
+            }
+            let resumen = "Has comprado:\n";
+            carrito.forEach(item => {
+                resumen += `- ${item.nombre} x${item.cantidad}: ${(item.precio * item.cantidad).toFixed(2)} €\n`;
+            });
+            resumen += `\nTotal: ${parseFloat(totalSpan.textContent).toFixed(2)} €`;
+
+            alert(resumen);
+        });
+
+        window.cambiarCantidad = cambiarCantidad;
+    </script>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const sideMenu = document.getElementById("side-menu");
+        const closeMenu = document.getElementById("close-menu");
+
+        menuToggle.addEventListener("click", () => {
+            sideMenu.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", () => {
+            sideMenu.classList.remove("active");
+        });
+
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
