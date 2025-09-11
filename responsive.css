@@ -385,127 +385,60 @@
 }
 
 
-/* ===============================
-   OPTIMIZACIÓN PARA MÓVILES (360px - 420px)
-   =============================== */
+/* ==============================
+   Ajustes específicos móviles verticales
+   ============================== */
 @media (max-width: 420px) {
-
-  /* HEADER */
-  .top-bar {
-    grid-template-columns: 50px 1fr 50px;
-    padding: 5px 10px;
-  }
-
-  .top-bar .logo img {
-    max-width: 35px;
-  }
-
-  .top-bar .logo span {
-    font-size: 0.8rem;
-  }
-
-  .top-bar .brand-name {
-    font-size: 0.85rem;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .top-bar .menu-toggle {
-    font-size: 1.3rem;
-  }
-
-  /* HERO (pantalla principal) */
   .hero {
-    padding: 40px 15px;
+    height: auto;
+    padding: 60px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
   }
 
   .hero h1 {
-    font-size: 1.5rem;
-    line-height: 1.2;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
   }
 
   .hero p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+    line-height: 1.5;
   }
 
   .hero .btn {
-    font-size: 0.85rem;
-    padding: 8px 14px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
   }
 
-  /* SECCIONES GENERALES */
   section {
     padding: 40px 15px;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 1.3rem;
+  section h2 {
+    font-size: 1.4rem;
     margin-bottom: 15px;
   }
 
-  p {
-    font-size: 0.9rem;
-    line-height: 1.4;
+  section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
-  /* CURSOS */
-  .curso {
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  .curso h3 {
-    font-size: 1.1rem;
-  }
-
-  .curso p {
-    font-size: 0.85rem;
-  }
-
-  /* CONTACTO */
-  .contacto .perfiles {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contacto .perfil {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* FORMULARIOS */
-  form input, 
-  form select, 
-  form textarea {
-    font-size: 0.9rem;
-    padding: 8px;
-  }
-
-  form button {
-    font-size: 0.9rem;
-    padding: 10px;
-  }
-
-  /* RESERVAR */
-  .reservar-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .reservar-container .calendario,
-  .reservar-container .formulario {
-    width: 100%;
-  }
-
-  /* FOOTER */
-  footer {
-    font-size: 0.8rem;
-    text-align: center;
-    padding: 20px 10px;
+  .curso,
+  .perfil,
+  .formulario {
+    width: 100% !important;
+    margin: 10px 0;
   }
 }
