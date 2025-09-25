@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>015 CUTZ Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo-social">
+                <img src="logoo.png" alt="Logo Barbería" id="logo-toggle">
+                <div class="social-icons hidden">
+                    <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <span>[015 CUTZ BARBERSHOP]</span>
+                </a>
+            </div>
+
+            <div class="user-icons">
+                <!-- Icono de usuario -->
+                <div class="profile-container">
+                    <a href="login.html" id="profile-icon"><i class="fas fa-user"></i></a>
+
+                    <!-- Panel desplegable -->
+                    <div class="profile-panel hidden" id="profile-panel">
+                        <p id="welcome-message"></p>
+                        <ul>
+                            <li><a href="#">Editar Perfil</a></li>
+                            <li><a href="#">Mi Carrito</a></li>
+                            <li><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+            <div class="right-icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="lugar.html">Lugar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-header">
+            <span>[015 CUTZ BARBERSHOP]</span>
+            <button id="close-menu">&times;</button>
+        </div>
+
+
+
+        <!-- Menú de navegación -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="lugar.html">Lugar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Redes sociales al final -->
+        <div class="side-social">
+            <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Corte y Estilo Premium</h1>
+            <p>La transición revolucionaria entre la barbería de precisión y la peluquería contemporánea.</p>
+            <a href="sobrenosotros.html" class="hero-btn">MÁS INFORMACIÓN</a>
+        </div>
+    </section>
+
+    <section class="reviews-section reveal">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>
+            Con más de <strong>370 reseñas</strong> y una valoración de
+            <strong>5 estrellas</strong> en Google
+        </p>
+
+        <div class="reviews-carousel">
+            <div class="reviews-track" id="reviews-container"></div>
+        </div>
+    </section>
+
+    <section class="booking-section reveal">
+        <div class="booking-container">
+            <h2>RESERVAR UNA CITA</h2>
+            <p>
+                Nos especializamos en brindar una experiencia exclusiva, que inicia con un proceso de reserva sencillo.
+                Desde nuestra plataforma online puede seleccionar al barbero y el horario ideal.
+                Si surge algún imprevisto, tendrá la opción de modificar su cita con un margen de 24 horas.
+            </p>
+            <a href="https://booksy.com/es-es/14005_015-cutz_barberia_55436_alicante-alacant#ba_s=seo"
+                class="booking-btn">RESERVAR AHORA</a>
+        </div>
+    </section>
+
+
+    <section class="three-columns reveal">
+        <div class="column">
+            <img src="productoss.jpg" alt="Producto 1">
+            <a href="tienda.html">COMPRAR CUIDADO DEL CABELLO</a>
+        </div>
+        <div class="column">
+            <img src="poodcaast.png" alt="Curso">
+            <a href="podcast.html">PODCAST</a>
+        </div>
+        <div class="column">
+            <img src="camisetas.jpg" alt="Herramientas">
+            <a href="tienda.html">CAMISETAS 015</a>
+        </div>
+    </section>
+
+    <section class="productos-recomendados reveal">
+        <h2>PRODUCTOS RECOMENDADOS</h2>
+        <div class="productos-grid-tienda">
+            <div class="producto-tienda">
+                <a href="tienda.html">
+                    <img src="producto.jpg" alt="Peine Profesional">
+                </a>
+                <h3>Spray Voluminizador</h3>
+                <p class="precio-tienda">15,00 €</p>
+            </div>
+            <div class="producto-tienda">
+                <a href="tienda.html">
+                    <img src="polvos.jpg" alt="Spray de Agua Premium">
+                </a>
+                <h3>Polvos de Volumen</h3>
+                <p class="precio-tienda">15,00 €</p>
+            </div>
+            <div class="producto-tienda">
+                <a href="tienda.html">
+                    <img src="gominaa.jpg" alt="Cera Fijadora">
+                </a>
+                <h3>Cera Fijadora</h3>
+                <p class="precio-tienda">15,00 €</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="podcast reveal">
+        <h2> EPISODIOS DEL PODCAST</h2>
+        <div class="podcast-slider">
+            <!-- Episodio 1 -->
+            <div class="podcast-slide active">
+                <div class="podcast-imagen">
+                    <a href="https://www.youtube.com/watch?v=fVLcdccWkqM" target="_blank">
+                        <img src="https://img.youtube.com/vi/fVLcdccWkqM/maxresdefault.jpg" alt="Podcast 1">
+                    </a>
+                </div>
+                <div class="podcast-info">
+                    <h2>Episodio 1: Así queremos hacer Crecer nuestra Marca</h2>
+                    <p>Una conversación real sobre arte, inspiración y vida.</p>
+                    <a href="https://www.youtube.com/watch?v=fVLcdccWkqM" target="_blank" class="btn-podcast">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <!-- Episodio 2 -->
+            <div class="podcast-slide">
+                <div class="podcast-imagen">
+                    <a href="https://www.youtube.com/watch?v=Sa-3JF3f6d4" target="_blank">
+                        <img src="https://img.youtube.com/vi/Sa-3JF3f6d4/maxresdefault.jpg" alt="Podcast 2">
+                    </a>
+                </div>
+                <div class="podcast-info">
+                    <h2>Episodio 2: Le tengo mucha RABIA al CEJAS</h2>
+                    <p>Historias desde la barbería sobre esfuerzo y crecimiento.</p>
+                    <a href="https://www.youtube.com/watch?v=Sa-3JF3f6d4" target="_blank" class="btn-podcast">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <!-- Episodio 3 -->
+            <div class="podcast-slide">
+                <div class="podcast-imagen">
+                    <a href="https://www.youtube.com/watch?v=qNFY8-YUCao" target="_blank">
+                        <img src="https://img.youtube.com/vi/qNFY8-YUCao/maxresdefault.jpg" alt="Podcast 3">
+                    </a>
+                </div>
+                <div class="podcast-info">
+                    <h2>Episodio 3: Oriol Soldevila - Así marqué un HAT TRICK al BARÇA</h2>
+                    <p>Un episodio motivador para lanzarse a por tus sueños.</p>
+                    <a href="https://www.youtube.com/watch?v=qNFY8-YUCao" target="_blank" class="btn-podcast">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <!-- Episodio 4-->
+            <div class="podcast-slide">
+                <div class="podcast-imagen">
+                    <a href="https://www.youtube.com/watch?v=0iza3S4HHvE" target="_blank">
+                        <img src="https://img.youtube.com/vi/0iza3S4HHvE/maxresdefault.jpg" alt="Podcast 4">
+                    </a>
+                </div>
+                <div class="podcast-info">
+                    <h2>Episodio 4: NB StudioBarber - Así CONSEGUÍ hacerme VIRAL en redes con mis CORTES</h2>
+                    <p>Cómo la mentalidad positiva puede transformar tu vida y carrera.</p>
+                    <a href="https://www.youtube.com/watch?v=0iza3S4HHvE" target="_blank" class="btn-podcast">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <!-- Episodio 5-->
+            <div class="podcast-slide">
+                <div class="podcast-imagen">
+                    <a href="https://www.youtube.com/watch?v=p5VxDlr6kvA" target="_blank">
+                        <img src="https://img.youtube.com/vi/p5VxDlr6kvA/maxresdefault.jpg" alt="Podcast 5">
+                    </a>
+                </div>
+                <div class="podcast-info">
+                    <h2>Episodio 5: Cicericlippers - Así CRECÍ mi NEGOCIO fuera de mi PAÍS</h2>
+                    <p>Explorando cómo la creatividad impulsa la innovación en cualquier campo.</p>
+                    <a href="https://www.youtube.com/watch?v=p5VxDlr6kvA" target="_blank" class="btn-podcast">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <!-- Episodio 6-->
+            <div class="podcast-slide">
+                <div class="podcast-imagen">
+                    <a href="https://www.youtube.com/watch?v=YLy5PaS97j4" target="_blank">
+                        <img src="https://img.youtube.com/vi/YLy5PaS97j4/maxresdefault.jpg" alt="Podcast 6">
+                    </a>
+                </div>
+                <div class="podcast-info">
+                    <h2>Episodio 6: De Musical.ly al IRONMAN - La increíble historia de Aaron Asensio</h2>
+                    <p>Reflexiones sobre perseguir tus metas y enfrentar los desafíos del camino.</p>
+                    <a href="https://www.youtube.com/watch?v=YLy5PaS97j4" target="_blank" class="btn-podcast">Ver en
+                        YouTube</a>
+                </div>
+            </div>
+
+            <button class="flecha izquierda">&#10094;</button>
+            <button class="flecha derecha">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="ropa reveal">
+        <h2>Ropa 015 CUTZ</h2>
+        <div class="ropa-container">
+
+            <div class="ropa-item">
+                <a href="tienda.html">
+                    <img src="camisetas.jpg" alt="Camiseta Logo">
+                </a>
+                <h3>Camiseta Blanca 015</h3>
+                <p class="precio">25€</p>
+            </div>
+
+            <div class="ropa-item">
+                <a href="tienda.html">
+                    <img src="camisetas.jpg" alt="Camiseta Especial">
+                </a>
+                <h3>Camiseta Negra 015</h3>
+                <p class="precio">25€</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="filosofia reveal">
+        <div class="contenedor-filosofia">
+
+            <div class="filosofia-item">
+                <span class="comillas">“</span>
+                <p>
+                    La barbería es un arte que combina precisión y creatividad. No hay límites para lo que podemos
+                    lograr con pasión, dedicación y un compromiso constante con la excelencia.
+                </p>
+                <div class="autor">
+                    <img src="james icono.jpg" alt="Josh Lamonaca">
+                    <div>
+                        <h4>James Webb</h4>
+                        <p>Cofundador</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="filosofia-item">
+                <span class="comillas">“</span>
+                <p>
+                    Nuestro trabajo no es únicamente cortar, sino transformar. Queremos que cada cliente se mire al
+                    espejo y se sienta la mejor versión de sí mismo.
+                </p>
+                <div class="autor">
+                    <img src="miky.jpg" alt="Samuel Palmer">
+                    <div>
+                        <h4>Miky</h4>
+                        <p>Cofundador</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-section reveal">
+        <div class="trust-box">
+            <i class="fas fa-lock"></i>
+            <h3>Transacciones seguras</h3>
+            <p>Todas tus compras están protegidas con seguridad de nivel bancario.</p>
+        </div>
+        <div class="trust-box">
+            <i class="fas fa-credit-card"></i>
+            <h3>Pago rápido y fácil</h3>
+            <p>Ofrecemos un sistema de pago seguro, sencillo y sin complicaciones.</p>
+        </div>
+        <div class="trust-box">
+            <i class="fas fa-headset"></i>
+            <h3>Atención personalizada</h3>
+            <p>¿Tienes dudas? Nuestro equipo está disponible para ayudarte en cualquier momento.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-social">
+                <h4>SÍGUENOS</h4>
+                <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+                </a>
+                <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+                </a>
+            </div>
+
+
+            <div class="footer-info">
+                <h4>INFORMACIÓN</h4>
+                <ul>
+                    <li><a href="#">Únase a nosotros</a></li>
+                    <li><a href="#">Política de envíos</a></li>
+                    <li><a href="#">Política de reembolso</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Condiciones de servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="footer-payments">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="Mastercard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Pay">
+            <img src="https://images.seeklogo.com/logo-png/33/1/google-pay-logo-png_seeklogo-334912.png"
+                alt="Google Pay">
+            <img src="https://images.seeklogo.com/logo-png/39/1/bizum-logo-png_seeklogo-390244.png" alt="Bizum">
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2025 015 CUTZ BARBERSHOP | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="menu.js"></script>
+
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2PNY8aH0nmzFGMc7Zp_ITMA65eY5hyCM&libraries=places">
+    </script>
+</body>
+
+</html>

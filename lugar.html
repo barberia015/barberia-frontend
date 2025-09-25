@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>015 CUTZ Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo-social">
+                <img src="logoo.png" alt="Logo Barbería" id="logo-toggle">
+                <div class="social-icons hidden">
+                    <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <span>[015 CUTZ BARBERSHOP]</span>
+                </a>
+            </div>
+
+            <div class="user-icons">
+                <!-- Icono de usuario -->
+                <div class="profile-container">
+                    <a href="login.html" id="profile-icon"><i class="fas fa-user"></i></a>
+
+                    <!-- Panel desplegable -->
+                    <div class="profile-panel hidden" id="profile-panel">
+                        <p id="welcome-message"></p>
+                        <ul>
+                            <li><a href="#">Editar Perfil</a></li>
+                            <li><a href="#">Mi Carrito</a></li>
+                            <li><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+            <div class="right-icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="lugar.html">Lugar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+  
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-header">
+            <span>[015 CUTZ BARBERSHOP]</span>
+            <button id="close-menu">&times;</button>
+        </div>
+
+
+
+        <!-- Menú de navegación -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="lugar.html">Lugar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Redes sociales al final -->
+        <div class="side-social">
+            <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+
+
+    <!-- SECCIÓN UBICACIÓN -->
+    <section class="lugar-hero">
+        <h1>💈 Nuestra Barbería</h1>
+        <p>Encuéntranos fácilmente y ven a disfrutar de la mejor experiencia en cortes y estilo.</p>
+    </section>
+
+    <section class="ubicacion-horario">
+        <div class="info-ubicacion">
+            <h2><i class="fas fa-map-marker-alt"></i> Dirección</h2>
+            <p>C. Médico Vicente Reyes, 15, Local A2, 03015 Alicante</p>
+
+            <h2><i class="fas fa-clock"></i> Horario</h2>
+            <table class="horario-tabla">
+                <tr>
+                    <td>Viernes</td>
+                    <td>10:00–21:00</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td>10:00–14:00</td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td>Cerrado</td>
+                </tr>
+                <tr>
+                    <td>Lunes</td>
+                    <td>16:00–21:00</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>10:00–21:00</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>10:00–21:00</td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>10:00–21:00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3849.3294617553543!2d-0.47749690711500137!3d38.36416413103265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62370f3baa5d69%3A0x47c9f006b740438c!2s015%20cutz!5e1!3m2!1ses!2ses!4v1755944655811!5m2!1ses!2ses"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            <!-- Botón solo móvil -->
+            <a href="https://www.google.com/maps/dir/?api=1&destination=015+Cutz+Barbershop,+C.+M%C3%A9dico+Vicente+Reyes,+15,+03015+Alicante"
+                target="_blank" class="btn-como-llegar">
+                Cómo llegar
+            </a>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="lugar.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

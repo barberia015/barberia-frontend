@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda | 015 CUTZ Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo-social">
+                <img src="logoo.png" alt="Logo Barbería" id="logo-toggle">
+                <div class="social-icons hidden">
+                    <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <span>[015 CUTZ BARBERSHOP]</span>
+                </a>
+            </div>
+
+            <div class="user-icons">
+                <!-- Icono de usuario -->
+                <div class="profile-container">
+                    <a href="login.html" id="profile-icon"><i class="fas fa-user"></i></a>
+
+                    <!-- Panel desplegable -->
+                    <div class="profile-panel hidden" id="profile-panel">
+                        <p id="welcome-message"></p>
+                        <ul>
+                            <li><a href="#">Editar Perfil</a></li>
+                            <li><a href="#">Mi Carrito</a></li>
+                            <li><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+            <div class="right-icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="lugar.html">Lugar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-header">
+            <span>[015 CUTZ BARBERSHOP]</span>
+            <button id="close-menu">&times;</button>
+        </div>
+
+
+
+        <!-- Menú de navegación -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="lugar.html">Lugar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Redes sociales al final -->
+        <div class="side-social">
+            <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+
+    <div class="overlay" id="overlay"></div>
+    <!-- Panel del carrito -->
+    <div class="carrito-panel" id="carritoPanel">
+        <h2>Tu carrito</h2>
+        <ul id="listaCarrito"></ul>
+        <p class="total">Total: <span id="total">0.00</span> €</p>
+        <button class="btn-finalizar" id="finalizarCompra">Finalizar compra</button>
+    </div>
+
+    <!-- Sección de Tienda -->
+    <main class="tienda">
+        <h1 class="tienda-titulo">Nuestra Tienda</h1>
+        <p class="tienda-subtitulo">Explora nuestras camisetas exclusivas y productos de cuidado capilar profesional.
+        </p>
+
+        <!-- Camisetas -->
+        <section class="productos-tienda">
+            <h2 class="seccion-tienda">Camisetas Exclusivas</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="camisetas.jpg" alt="Camiseta Negra Logo 015">
+                    <h3>Camiseta Negra 015</h3>
+                    <p>Camiseta fresca y ligera para un estilo urbano. Perfecta para representar la esencia de 015 CUTZ.
+                    </p>
+                    <p><strong>25 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Camiseta Negra 015 CUTZ"
+                        data-precio="25">Proximamente</button>
+                </div>
+                <div class="producto-card">
+                    <img src="camisetas.jpg" alt="Camiseta Blanca Logo 015">
+                    <h3>Camiseta Blanca 015</h3>
+                    <p>Camiseta fresca y ligera para un estilo urbano. Perfecta para representar la esencia de 015 CUTZ.
+                    </p>
+                    <p><strong>25 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Camiseta Blanca 015 CUTZ"
+                        data-precio="25">Proximamente</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos de cuidado del cabello -->
+        <section class="productos-tienda">
+            <h2 class="seccion-tienda">Productos para el Cabello</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="polvos.jpg" alt="Pomada de Fijación Fuerte">
+                    <h3>Polvos de Volumen</h3>
+                    <p>Ideal para peinados definidos y con control total. Aporta brillo moderado y duración prolongada.
+                    </p>
+                    <p><strong> €</strong></p>
+                    <button class="btn-comprar" data-nombre="Pomada de Fijación Fuerte"
+                        data-precio="15">Proximamente</button>
+                </div>
+                <div class="producto-card">
+                    <img src="producto.jpg" alt="Cera Mate Profesional">
+                    <h3>Spray Voluminizador</h3>
+                    <p>Textura natural sin brillo, con fijación flexible. Perfecta para looks modernos y desenfadados.
+                    </p>
+                    <p><strong>15 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Cera Mate Profesional"
+                        data-precio="15">Proximamente</button>
+                </div>
+                <div class="producto-card">
+                    <img src="gominaa.jpg" alt="Shampoo Revitalizante">
+                    <h3>Cera Fijadora</h3>
+                    <p>Limpieza profunda que fortalece el cabello desde la raíz. Fórmula nutritiva enriquecida con
+                        ingredientes naturales.</p>
+                    <p><strong>15 €</strong></p>
+                    <button class="btn-comprar" data-nombre="Shampoo Revitalizante"
+                        data-precio="10">Proximamente</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

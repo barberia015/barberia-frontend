@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>015 CUTZ Barbershop - Podcast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="logo-social">
+                <img src="logoo.png" alt="Logo Barbería" id="logo-toggle">
+                <div class="social-icons hidden">
+                    <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <span>[015 CUTZ BARBERSHOP]</span>
+                </a>
+            </div>
+
+            <div class="user-icons">
+                <!-- Icono de usuario -->
+                <div class="profile-container">
+                    <a href="login.html" id="profile-icon"><i class="fas fa-user"></i></a>
+
+                    <!-- Panel desplegable -->
+                    <div class="profile-panel hidden" id="profile-panel">
+                        <p id="welcome-message"></p>
+                        <ul>
+                            <li><a href="#">Editar Perfil</a></li>
+                            <li><a href="#">Mi Carrito</a></li>
+                            <li><a href="#" id="logout-btn">Cerrar Sesión</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+
+            </div>
+            <div class="right-icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="lugar.html">Lugar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-header">
+            <span>[015 CUTZ BARBERSHOP]</span>
+            <button id="close-menu">&times;</button>
+        </div>
+
+
+
+        <!-- Menú de navegación -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="lugar.html">Lugar</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <!-- Redes sociales al final -->
+        <div class="side-social">
+            <a href="https://www.instagram.com/015cutzbarbershop/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@015podcast"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PODCAST -->
+    <main class="podcast-container">
+        <section class="podcast-header">
+            <h1>🎙️ Bienvenidos al Podcast de 015</h1>
+            <p>
+                Desde la barbería para el mundo. Aquí no venimos a hablar, venimos a soltar verdades.
+                En este canal encontrarás charlas reales con artistas, emprendedores, callejeros, barberos y soñadores
+                que están construyendo su camino sin filtros.
+            </p>
+        </section>
+
+        <section class="podcast-grid ">
+            <!-- Video 1 -->
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=fVLcdccWkqM" target="_blank">
+                    <img src="https://img.youtube.com/vi/fVLcdccWkqM/0.jpg" alt="Podcast 1">
+                </a>
+                <h3>Episodio 1: Así queremos hacer Crecer nuestra Marca</h3>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=Sa-3JF3f6d4" target="_blank">
+                    <img src="https://img.youtube.com/vi/Sa-3JF3f6d4/0.jpg" alt="Podcast 2">
+                </a>
+                <h3>Episodio 2: Le tengo mucha RABIA al CEJAS</h3>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=qNFY8-YUCao" target="_blank">
+                    <img src="https://img.youtube.com/vi/qNFY8-YUCao/0.jpg" alt="Podcast 3">
+                </a>
+                <h3>Episodio 3: Oriol Soldevila - Así marqué un HAT TRICK al BARÇA</h3>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=0iza3S4HHvE" target="_blank">
+                    <img src="https://img.youtube.com/vi/0iza3S4HHvE/0.jpg" alt="Podcast 4">
+                </a>
+                <h3>Episodio 4: NB StudioBarber - Así CONSEGUÍ hacerme VIRAL en redes con mis CORTES</h3>
+            </div>
+
+            <!-- Video 5 -->
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=p5VxDlr6kvA" target="_blank">
+                    <img src="https://img.youtube.com/vi/p5VxDlr6kvA/0.jpg" alt="Podcast 5">
+                </a>
+                <h3>Episodio 5: Cicericlippers - Así CRECÍ mi NEGOCIO fuera de mi PAÍS</h3>
+            </div>
+
+            <!-- Video 6 -->
+            <div class="podcast-card">
+                <a href="https://www.youtube.com/watch?v=YLy5PaS97j4" target="_blank">
+                    <img src="https://img.youtube.com/vi/YLy5PaS97j4/0.jpg" alt="Podcast 6">
+                </a>
+                <h3>Episodio 6: De Musical.ly al IRONMAN - La increíble historia de Aaron Asensio</h3>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+
+</html>
