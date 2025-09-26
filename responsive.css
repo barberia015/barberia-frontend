@@ -637,3 +637,51 @@
     font-size: 1.4rem;
   }
 }
+
+/* ====== Sección three-columns ====== */
+
+/* Base: móvil (una columna) */
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.three-columns .column {
+  flex: 1 1 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Móvil horizontal (forzar 3 columnas) */
+@media (min-width: 568px) and (max-width: 767px) {
+  .three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Tablet vertical (solo 2 columnas) */
+@media (min-width: 768px) and (max-width: 899px) {
+  .three-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Tablet horizontal y escritorio (3 columnas) */
+@media (min-width: 900px) {
+  .three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+
+
+
+
