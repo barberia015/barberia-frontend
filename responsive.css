@@ -503,6 +503,8 @@
   }
 }
 
+
+
 /* ============================= */
 /*   SOBRE NOSOTROS RESPONSIVE   */
 /*   Optimizado para móviles      */
@@ -646,6 +648,8 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  width: 100%;          /* 🔑 aseguramos que nunca se pase */
+  overflow-x: hidden;   /* 🔑 por si algo intenta desbordar */
 }
 
 .three-columns .column {
@@ -660,6 +664,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    padding: 0 5px; /* 🔑 quita bordes de más */
   }
 }
 
@@ -678,6 +683,34 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+}
+
+/* ====== Corrección para móvil en horizontal (landscape) ====== */
+@media (max-height: 500px) and (orientation: landscape) {
+  body {
+    overflow-x: hidden; /* Evita scroll horizontal */
+  }
+
+  .three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 5px;
+    margin: 0 auto;       /* 🔑 centra el grid */
+    width: 100%;
+  }
+
+  .three-columns .column {
+    flex: unset;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .three-columns img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
